@@ -2,3 +2,24 @@ How is the staging area different from the working directory and the repository?
 
 Working directory has an initialized git repository and other files. Staging area is a snapshot of the files we want to commit to the git repository. 
 One commit for one logical change is the ideal commit frequeny. In big projects, one logical change may affect multiple files. With staging area, we can track the groups of file affected by one change and commit them as groups at once. When a bug is introduced to our project, thanks to the staging area, we can limit our search with the files grouped together.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can use git diff command (without any parameters) to see all the changes between staging area and the working directory and select the files I want to commit running git commit file.fileExtension. Staging area is giving me the flexibility to display all recent changes and operate independently on each of them.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+We can create a branch of our project and work in parallel. For example, adding a new language support. We can also get creative without hurting the main project or any other's work. If I think differently about a feature and try something, I can make a working demonstration instead of talking hypotetical situations. It will save time and energy.
+
+How do the diagrams help you visualize the branch structure?
+
+Visualizing the branch structure helped me to understand the difference between the git checkout commitId and git checkout branchName commands. git checkout commitId creates an unnamed branch and it is reachable since it doesn't show up in the logs. It is important to know because not knowing this concept may result in loosing work. 
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging is a combined features in one working project.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+When people change the same part of a file git will not merge these two versions automatically. It is like two people having different opinions on an issue which describes the conflict. Making git guess which version to keep is not feasible. If the conflict is a major difference then manual merging gives developer a chance to sit together and consider their solutions again. But for simple differences, it may get very tedious.
