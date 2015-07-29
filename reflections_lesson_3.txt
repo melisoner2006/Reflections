@@ -1,4 +1,8 @@
-
 When would you want to use a remote repository rather than keeping all your work local?
 
 When my project is ready to be published: functional and working. 
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Different users may push their changes to the same repository. Git performing an automatic pull is not ideal if different users change the same file. This will cause conflicts. And everytime someone add a new file to the remote repository, git performing pull might be annoying and hectic. 
+
