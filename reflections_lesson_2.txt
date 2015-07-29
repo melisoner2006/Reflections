@@ -1,0 +1,4 @@
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Working directory has an initialized git repository and other files. Staging area is a snapshot of the files we want to commit to the git repository. 
+One commit for one logical change is the ideal commit frequeny. In big projects, one logical change may affect multiple files. With staging area, we can track the groups of file affected by one change and commit them as groups at once. When a bug is introduced to our project, thanks to the staging area, we can limit our search with the files grouped together.
