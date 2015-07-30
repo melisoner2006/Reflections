@@ -6,3 +6,10 @@ Why might you want to always pull changes manually rather than having Git automa
 
 Different users may push their changes to the same repository. Git performing an automatic pull is not ideal if different users change the same file. This will cause conflicts. And everytime someone add a new file to the remote repository, git performing pull might be annoying and hectic. 
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Unlike clone, fork is a feature only accessible from GitHub website. When you clone a repository, it creates the remote object referencing to the owner repository. But when you fork on GitHub then clone it, the remote object references me as the owner of the repository. When you branch a repository it creates a copy most recent repository with all the snaphots taken in the history (log of all the commits). 
+
+If I have access to the website, I first fork a repository then clone it. If I want to contribute to that project I'll create a branch first to work on my part. 
+If I don't have access to GitHub, I'll clone the repository then create a branch if necessary. I can create a nmakeew remote object to push my changes.
+When I have a copy of a repository, if I want to work on a functionality or a feature like adding language support to the strings or making a version with changing the logic, then I'll create a branch.
